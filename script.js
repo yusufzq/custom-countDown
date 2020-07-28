@@ -34,7 +34,7 @@ function updateDOM() {
 		if (timeLeft < 0) {
 			countdownElement.hidden = true;
 			clearInterval(countdownActive);
-			completeElementInfo.textContent = `${countdownTitle} Finished on ${countdownDateTime}`;
+			completeElementInfo.textContent = `${countdownTitle} Finished on ${countdownDateTime.split('T')[0]} at ${countdownDateTime.split('T')[1]}`;
 			completeElement.hidden = false;
 		} else {
 			countdownElementTitle.textContent = `${countdownTitle}`;
