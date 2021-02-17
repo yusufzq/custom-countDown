@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 html {
-	box-sizing: border-box
+	box-sizing: border-box;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 	overflow-y: hidden;
 	display: flex;
 	align-items: center;
-	font-family: 'Nunito', sans-serif
+	font-family: 'Nunito', sans-serif;
 }
 
 .video-background {
@@ -18,14 +18,14 @@ body {
 	right: 0;
 	bottom: 0;
 	width: 100vw;
-	height: auto
+	height: auto;
 }
 
 video {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%)
+	transform: translate(-50%, -50%);
 }
 
 .video-overlay {
@@ -34,7 +34,7 @@ video {
 	top: 0;
 	width: 100vw;
 	height: 100vh;
-	background-color: rgba(255, 255, 255, 0.35)
+	background-color: rgba(255, 255, 255, 0.35);
 }
 
 .container {
@@ -47,39 +47,39 @@ video {
 	z-index: 2;
 	display: flex;
 	justify-content: center;
-	background-color: rgba(255, 255, 255, 0.85)
+	background-color: rgba(255, 255, 255, 0.85);
 }
 
 .input-container {
 	position: relative;
-	top: 20px
+	top: 20px;
 }
 
 h1 {
 	margin-top: 0;
 	margin-bottom: 10px;
 	font-size: 35px;
-	text-align: center
+	text-align: center;
 }
 
 form {
-	width: 480px
+	width: 480px;
 }
 
 label {
 	margin-left: 10px;
-	font-weight: bold
+	font-weight: bold;
 }
 
 input {
 	width: 95%;
 	margin-bottom: 10px;
 	padding: 10px;
-	border: 1px solid #CCC;
+	border: 1px solid #CCCCCC;
 	border-radius: 20px;
-	background: #FFF;
+	background: #FFFFFF;
 	outline: none;
-	font-family: 'Nunito', sans-serif
+	font-family: 'Nunito', sans-serif;
 }
 
 button {
@@ -92,15 +92,15 @@ button {
 	background: #006959;
 	color: white;
 	cursor: pointer;
-	outline: none
+	outline: none;
 }
 
 button:hover {
-	filter: brightness(110%)
+	filter: brightness(110%);
 }
 
 ul {
-	margin-left: -45px
+	margin-left: -45px;
 }
 
 li {
@@ -108,67 +108,66 @@ li {
 	font-size: 30px;
 	list-style-type: none;
 	padding: 10px;
-	text-transform: uppercase
+	text-transform: uppercase;
 }
 
 li span {
 	display: block;
 	font-size: 80px;
-	text-align: center
+	text-align: center;
 }
 
 .complete {
 	position: relative;
-	top: 60px
+	top: 60px;
 }
 
 .complete-title {
-	animation: complete 4s infinite
+	animation: complete 4s infinite;
 }
 
 @keyframes complete {
 	0% {
-		color: red
+		color: red;
 	}
 
 	17% {
-		color: orange
+		color: orange;
 	}
 
 	33% {
-		color: yellow
+		color: yellow;
 	}
 
 	50% {
 		color: green;
-		transform: scale(1.5)
+		transform: scale(1.5);
 	}
 
 	67% {
-		color: blue
+		color: blue;
 	}
 
 	83% {
-		color: indigo
+		color: indigo;
 	}
 
 	100% {
-		color: violet
+		color: violet;
 	}
 }
 
-/* Media Query: Large Smartphone (Vertical) */
-
+/* media-query: large smartPhone (vertical) */
 @media screen and (max-width: 600px) {
 	.video-background {
 		width: 100vw;
-		height: 100vh
+		height: 100vh;
 	}
-	
+
 	video {
 		margin-top: -1px;
 		object-fit: cover;
-		object-position: 70%
+		object-position: 70%;
 	}
 
 	.container {
@@ -176,35 +175,35 @@ li span {
 		width: 95vw;
 		min-height: 245px;
 		padding: 20px;
-		margin: 10px
+		margin: 10px;
 	}
 
 	.input-container {
-		top: unset
+		top: unset;
 	}
 
 	.countdown {
 		position: relative;
-		top: 10px
+		top: 10px;
 	}
 
 	form {
-		width: unset
+		width: unset;
 	}
 
 	input {
-		width: 93%
+		width: 93%;
 	}
 
 	h1 {
-		font-size: 20px
+		font-size: 20px;
 	}
 
 	li {
-		font-size: 15px
+		font-size: 15px;
 	}
 
 	li span {
-		font-size: 40px
+		font-size: 40px;
 	}
 }

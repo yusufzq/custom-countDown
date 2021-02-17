@@ -1,6 +1,7 @@
-# Custom Countdown
-* Create a custom countdown for an event.
-* Countdown details stored in local storage and persisted upon reload.
+# Custom CountDown
+
+* create custom countDown for event
+* countDown-deTails stored in local-storage & persisted upOn reLoad
 
 ## Stack
 
